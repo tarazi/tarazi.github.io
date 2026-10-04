@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://tarazi.github.io/</loc>
+    <lastmod>2026-10-04</lastmod>
+  </url>
+  <url>
+    <loc>https://tarazi.github.io/planet-pointer/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarazi.github.io/planet-pointer/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://tarazi.github.io/planet-pointer/he/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarazi.github.io/planet-pointer/"/>
+  </url>
+  <url>
+    <loc>https://tarazi.github.io/planet-pointer/he/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarazi.github.io/planet-pointer/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://tarazi.github.io/planet-pointer/he/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarazi.github.io/planet-pointer/"/>
+  </url>
+</urlset>

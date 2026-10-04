@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tarazi Apps: Planet Pointer and more</title>
+<meta name="description" content="Apps by Haviv Tarazi. Planet Pointer: point your phone at the sky and find any planet, star, constellation or satellite. Offline, 79 languages, private.">
+<link rel="canonical" href="https://tarazi.github.io/">
+<meta name="theme-color" content="#EFE9E1">
+<link rel="icon" type="image/png" href="planet-pointer/img/icon-96.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tarazi Apps">
+<meta property="og:description" content="Planet Pointer: point your phone up, know what you see.">
+<meta property="og:url" content="https://tarazi.github.io/">
+<meta property="og:image" content="https://tarazi.github.io/planet-pointer/img/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Tarazi Apps","url":"https://tarazi.github.io/","author":{"@type":"Person","name":"Haviv Tarazi"}}</script>
+<style>
+  @font-face { font-family: "Bricolage Grotesque"; src: url(fonts/bricolage-grotesque-latin-wght-normal.woff2) format("woff2"); font-weight: 200 800; font-display: swap; }
+  @font-face { font-family: "Rubik"; src: url(fonts/rubik-hebrew-wght-normal.woff2) format("woff2"); font-weight: 300 900; font-display: swap; unicode-range: U+0590-05FF; }
+  /* Palette "Fresh", shared with the app pages */
+  :root { --bg: #EFE9E1; --card: #FAF8F4; --ink: #290907; --muted: #57473A; --accent: #5D7349; --line: rgb(41 9 7 / .09); }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: var(--bg); color: var(--ink); font-family: "Bricolage Grotesque", "Rubik", system-ui, sans-serif; min-height: 100dvh; display: flex; flex-direction: column; }
+  a { color: inherit; text-decoration: none; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; width: 100%; }
+  header { padding: 96px 0 48px; }
+  h1 { font-size: clamp(44px, 7vw, 84px); font-weight: 800; letter-spacing: -0.045em; line-height: .95; }
+  header p { margin-top: 18px; font-size: 20px; color: var(--muted); max-width: 44ch; }
+  .app { display: grid; grid-template-columns: 120px 1fr auto; gap: 28px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: 32px; padding: 28px; transition: transform .4s cubic-bezier(.34,1.56,.64,1), box-shadow .4s; }
+  .app:hover { transform: translateY(-4px); box-shadow: 0 24px 60px rgb(93 115 73 / .18); }
+  .app img { width: 120px; height: 120px; border-radius: 28px; }
+  .app h2 { font-size: 32px; font-weight: 800; letter-spacing: -0.03em; }
+  .app p { color: var(--muted); font-size: 17px; margin-top: 6px; max-width: 46ch; }
+  .go { display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border-radius: 999px; background: var(--accent); color: #fff; font-weight: 600; white-space: nowrap; }
+  footer { margin-top: auto; padding: 48px 0; color: var(--muted); font-size: 14px; }
+  @media (max-width: 700px) { .app { grid-template-columns: 1fr; text-align: left; } .app img { width: 88px; height: 88px; border-radius: 22px; } header { padding-top: 64px; } }
+  @media (prefers-reduced-motion: reduce) { .app { transition: none; } .app:hover { transform: none; } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Tarazi Apps.</h1>
+      <p>Small, careful apps by Haviv Tarazi. Private by design: what happens on your phone stays on your phone.</p>
+    </header>
+    <a class="app" href="planet-pointer/">
+      <img src="planet-pointer/img/icon-512.png" alt="Planet Pointer icon" width="120" height="120">
+      <div><h2>Planet Pointer</h2><p>Point your phone at the sky and find any planet, star, constellation or satellite. Offline, in 79 languages.</p></div>
+      <span class="go">Open</span>
+    </a>
+  </div>
+  <footer><div class="wrap">Haviv Tarazi &nbsp; tarazi.apps@gmail.com &nbsp; <a href="planet-pointer/he/" lang="he">Planet Pointer בעברית</a></div></footer>
+</body>
+</html>

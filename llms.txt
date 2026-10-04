@@ -1,0 +1,25 @@
+# Planet Pointer
+
+> Planet Pointer is a mobile app (Android on Google Play; iPhone coming to the App Store) that turns the phone's camera into a guide to the night sky. The user picks a target, or simply points the camera, and the app guides them to it or names what they are looking at. It works offline, in 79 languages, and the user's location never leaves the phone.
+
+## What it does
+- Guides the camera to any planet, star, constellation, deep-sky object or satellite with an arrow and a dashed line; the ring turns green when locked on.
+- "What's that?" identify mode labels everything in view and says how confident it is (the phone compass is accurate to about 5 degrees).
+- Catalogue: Sun, Moon and 7 planets; 33 brightest named stars; 88 constellations drawn on the live sky; 28 deep-sky objects (9 nebulae, 8 galaxies including the Milky Way, 11 star clusters); about 80 satellites tracked live (ISS, Hubble, Tiangong, Starlink, weather satellites, Amos), with upcoming passes.
+- Sky events, time travel, night-vision red mode, spoken guidance.
+
+## Price
+- Free: the camera guide, Sun, Moon, all 7 planets, the ISS and Hubble, plus two famous objects in each category, and 13 built-in languages.
+- Pro: one-time purchase, launch price $4.99. Unlocks every star, constellation, deep-sky object and satellite, and 66 more downloadable languages. No subscription.
+
+## Privacy
+- All positions are computed on the device. Location is used only on the phone and is never recorded or sent. No account. Works offline; the internet is used only to refresh satellite orbits and download extra languages.
+
+## Links
+- [Website (English)](https://tarazi.github.io/planet-pointer/)
+- [Website (Hebrew)](https://tarazi.github.io/planet-pointer/he/)
+- [Google Play](https://play.google.com/store/apps/details?id=com.tarazi.planetpointer)
+- [Privacy policy](https://tarazi.github.io/planet-pointer-privacy/)
+- [Support](https://tarazi.github.io/planet-pointer-support/)
+
+Developer: Haviv Tarazi. Contact: tarazi.apps@gmail.com
