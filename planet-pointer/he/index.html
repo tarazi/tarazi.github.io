@@ -49,7 +49,51 @@
   .hero h1 { font-size: clamp(46px, 7vw, 96px); font-weight: 800; letter-spacing: -0.045em; line-height: .95; }
   .hero h1 .u { background: linear-gradient(transparent 62%, color-mix(in srgb, var(--accent) 25%, transparent) 62%); }
   .hero p { margin-top: 22px; font-size: 20px; color: var(--muted); max-width: 40ch; }
-  .hero .row { display: flex; gap: 12px; margin-top: 32px; flex-wrap: wrap; }
+  .hero .row { display: flex; gap: 24px; align-items: center; margin-top: 32px; flex-wrap: wrap; }
+  /* The store badges are Apple's and Google's own artwork, served from this site. Never redraw them. */
+  /* --bw is the width BOTH badges end up occupying on screen. Each is scaled evenly from it, never
+     stretched: the two artworks have different proportions, so equal width means slightly unequal
+     height, and that is the only version of "the same size" that leaves the artwork untouched. */
+  .stores { --bw: 148px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+  .store { display: block; transition: transform .35s cubic-bezier(.34,1.56,.64,1); }
+  .store:hover { transform: translateY(-3px); }
+  .store:active { transform: scale(.97); }
+  .store img { display: block; height: auto; }
+  .store.apple img { width: var(--bw); }
+  /* Google bakes the badge's required clear space into the PNG: the artwork is 87.3% of the file's width
+     and 67% of its height, so equal file widths would draw Google the smaller of the two. The padding is
+     the badge's own margin and must not be cropped, so the file is enlarged and pulled back by exactly
+     the padding it carries (41 / 564 of the artwork's own width). */
+  .store.play img { width: calc(var(--bw) / 0.873); margin: calc(var(--bw) * -0.0727) 0 calc(var(--bw) * -0.0727) calc(var(--bw) * -0.0727); }
+  /* The code opens this very page: it carries a desktop visitor across to their phone, where the badges
+     are a tap away. On a phone it would point at the page already on screen, so it is shown only wide. */
+  .qr { display: none; }
+  .qrlabel { font-size: 13px; font-weight: 600; color: var(--muted); }
+  .qrbox { width: 112px; height: 112px; border-radius: 8px; overflow: hidden; }
+  .qrbox svg { display: block; width: 100%; height: 100%; }
+  @media (min-width: 1000px) {
+    .qr { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 14px; background: var(--card); border: 1px solid var(--line); border-radius: 22px; }
+  }
+  /* Pressing "Get the app" only scrolls the page a little, and a change nobody noticed reads as a button
+     that did nothing. So the target says so itself: the page glides instead of jumping, and the row lights
+     up and fades back. The padding is cancelled by an equal negative margin, so nothing moves on the page
+     and the glow has room to breathe. The outline is always there and merely transparent, for the same
+     reason. Both ends of the fade are a 0% color-mix rather than the keyword `transparent`, which some
+     engines interpolate through transparent BLACK and leave a grey smear mid-fade. */
+  html { scroll-behavior: auto; }
+  #get { width: fit-content; max-width: 100%; padding: 14px; margin: 32px -14px 0; border-radius: 26px; scroll-margin-top: 120px; outline: 2px solid color-mix(in srgb, var(--accent) 0%, transparent); }
+  #get.lookhere { animation: lookhere 2.6s cubic-bezier(.33, 0, .2, 1) both; }
+  @keyframes lookhere {
+    0%        { background-color: color-mix(in srgb, var(--accent) 0%, transparent);  outline-color: color-mix(in srgb, var(--accent) 0%, transparent); }
+    9%, 42%   { background-color: color-mix(in srgb, var(--accent) 13%, transparent); outline-color: color-mix(in srgb, var(--accent) 55%, transparent); }
+    100%      { background-color: color-mix(in srgb, var(--accent) 0%, transparent);  outline-color: color-mix(in srgb, var(--accent) 0%, transparent); }
+  }
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+  /* Someone who asked for less motion still has to be told where they landed: the mark is simply held
+     still for as long as the animation would have run, and the script takes it away either way. */
+  @media (prefers-reduced-motion: reduce) {
+    #get.lookhere { animation: none; background-color: color-mix(in srgb, var(--accent) 13%, transparent); outline-color: color-mix(in srgb, var(--accent) 55%, transparent); }
+  }
 
   /* orbit stage: the real planet art from the app, circling the phone */
   .orbit { position: relative; aspect-ratio: 1; width: min(560px, 100%); justify-self: center; }
@@ -172,6 +216,7 @@
   .figure span { right: auto; left: 0; }
   .legend i { margin-right: 0; margin-left: 6px; }
   .ct-pl .row img { margin-right: 0; margin-left: -6px; }
+  .store.play img { margin-left: 0; margin-right: calc(var(--bw) * -0.0727); }
   .marquee, .track { direction: ltr; }
   @media (max-width: 900px) { .wcopy { left: 22px; right: 22px; } }
 </style>
@@ -184,7 +229,13 @@
     <div>
       <h1>מוצאים את <span class="u">שבתאי</span> בעשר שניות.</h1>
       <p>מרימים את הטלפון ועוקבים אחרי החץ. כל כוכב לכת, כוכב ולוויין, בשמו ובשפה שלכם.</p>
-      <div class="row" id="get"><a class="pill" href="https://play.google.com/store/apps/details?id=com.tarazi.planetpointer">Google Play</a><a class="pill" href="https://apps.apple.com/app/id6815724964">App Store</a></div>
+      <div class="row" id="get">
+        <div class="stores">
+          <a class="store play" href="https://play.google.com/store/apps/details?id=com.tarazi.planetpointer" target="_blank" rel="noopener"><img src="../img/badge-googleplay-he.png" alt="כעת ב-Google Play" width="646" height="250"></a>
+          <a class="store apple" href="https://apps.apple.com/app/id6815724964" target="_blank" rel="noopener"><img src="../img/badge-appstore-he.svg" alt="להורדה ב-App Store" width="122" height="42"></a>
+        </div>
+        <div class="qr" aria-hidden="true"><span class="qrlabel">הורידו לנייד</span><div class="qrbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 41" shape-rendering="crispEdges"><path fill="#ffffff" d="M0 0h41v41H0z"/><path stroke="#000000" d="M4 4.5h7m2 0h1m2 0h1m3 0h1m1 0h2m1 0h1m1 0h1m2 0h7M4 5.5h1m5 0h1m4 0h2m2 0h1m2 0h1m2 0h1m2 0h1m1 0h1m5 0h1M4 6.5h1m1 0h3m1 0h1m1 0h1m1 0h3m1 0h1m1 0h1m2 0h1m1 0h4m1 0h1m1 0h3m1 0h1M4 7.5h1m1 0h3m1 0h1m1 0h2m2 0h1m5 0h1m2 0h1m1 0h2m1 0h1m1 0h3m1 0h1M4 8.5h1m1 0h3m1 0h1m1 0h2m1 0h2m1 0h4m2 0h1m1 0h1m3 0h1m1 0h3m1 0h1M4 9.5h1m5 0h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m1 0h1m1 0h1m1 0h2m1 0h1m5 0h1M4 10.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M12 11.5h5m1 0h1m1 0h1m1 0h6M4 12.5h1m1 0h5m2 0h1m1 0h1m1 0h2m2 0h1m1 0h1m3 0h1m2 0h5M4 13.5h1m1 0h2m1 0h1m1 0h1m2 0h2m1 0h2m1 0h5m2 0h1m2 0h2m1 0h2m1 0h1M8 14.5h3m1 0h1m1 0h2m1 0h5m2 0h1m1 0h1m5 0h1m1 0h2M7 15.5h2m2 0h1m1 0h5m1 0h1m1 0h2m1 0h1m3 0h1m1 0h1m1 0h3M5 16.5h1m1 0h2m1 0h2m2 0h1m3 0h3m3 0h3m1 0h1m3 0h2M5 17.5h5m4 0h3m2 0h1m1 0h2m5 0h1m1 0h1m2 0h1m1 0h2M5 18.5h8m1 0h3m2 0h2m1 0h1m1 0h1m1 0h1m2 0h2m2 0h1m1 0h1M6 19.5h1m5 0h2m2 0h1m2 0h1m5 0h1m1 0h1m1 0h2m2 0h2M5 20.5h1m1 0h1m1 0h3m2 0h1m2 0h1m1 0h1m1 0h1m2 0h1m1 0h4m1 0h2m3 0h1M4 21.5h1m1 0h4m2 0h3m5 0h1m1 0h4m1 0h1m1 0h3m1 0h4M4 22.5h3m2 0h2m1 0h8m2 0h1m2 0h1m2 0h5m1 0h2M4 23.5h1m1 0h2m3 0h1m2 0h1m1 0h5m4 0h11M5 24.5h1m1 0h1m2 0h2m4 0h3m3 0h2m1 0h1m2 0h2m1 0h3m1 0h2M4 25.5h2m2 0h1m2 0h1m1 0h5m1 0h3m2 0h5m1 0h1m5 0h1M4 26.5h1m2 0h1m2 0h1m1 0h1m1 0h5m2 0h1m1 0h1m2 0h1m2 0h1m1 0h1m1 0h3M4 27.5h1m1 0h2m1 0h1m1 0h1m4 0h3m1 0h1m2 0h4m6 0h4M4 28.5h1m4 0h2m5 0h1m4 0h3m2 0h1m1 0h5m3 0h1M12 29.5h2m3 0h1m2 0h5m2 0h2m3 0h1m1 0h1m1 0h1M4 30.5h7m2 0h2m1 0h4m1 0h1m4 0h3m1 0h1m1 0h1m1 0h1M4 31.5h1m5 0h1m1 0h2m1 0h3m1 0h1m1 0h2m1 0h1m2 0h2m3 0h3M4 32.5h1m1 0h3m1 0h1m1 0h1m1 0h3m2 0h2m3 0h3m1 0h6m1 0h1M4 33.5h1m1 0h3m1 0h1m1 0h3m3 0h2m1 0h2m4 0h3m2 0h2m2 0h1M4 34.5h1m1 0h3m1 0h1m1 0h3m1 0h1m1 0h4m2 0h2m2 0h1m1 0h2M4 35.5h1m5 0h1m4 0h1m2 0h2m5 0h2m3 0h1m1 0h3M4 36.5h7m1 0h1m1 0h1m2 0h1m1 0h3m2 0h1m1 0h3m2 0h1m1 0h1m1 0h1"/></svg></div></div>
+      </div>
     </div>
     <div class="orbit" id="orbit" aria-hidden="true">
       <div class="ring" style="--i:6%"></div><div class="ring" style="--i:20%"></div>
@@ -346,6 +397,30 @@
   let visible = true;
   new IntersectionObserver(([e]) => { const was = visible; visible = e.isIntersecting; if (visible && !was) frame(); }).observe(c);
   frame();
+})();
+</script>
+<script>
+(function () {
+  var a = document.querySelector('nav a.pill[href="#get"]');
+  if (!a) return;
+  var ua = navigator.userAgent, to = '';
+  if (/iPhone|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1)) to = 'https://apps.apple.com/app/id6815724964';
+  else if (/Android/.test(ua)) to = 'https://play.google.com/store/apps/details?id=com.tarazi.planetpointer';
+  if (to) { a.href = to; a.target = '_blank'; a.rel = 'noopener'; return; }
+  // Desktop: the button scrolls, and a scroll of a few lines is a change people miss, so the row says so
+  // itself. Removing the class and reading offsetWidth forces the reflow that lets a second press replay
+  // the animation. The timer clears the class even where the animation is off for reduced motion.
+  var row = document.getElementById('get'), timer;
+  function lookhere() {
+    if (!row) return;
+    row.classList.remove('lookhere');
+    void row.offsetWidth;
+    row.classList.add('lookhere');
+    clearTimeout(timer);
+    timer = setTimeout(function () { row.classList.remove('lookhere'); }, 2800);
+  }
+  a.addEventListener('click', lookhere);
+  addEventListener('hashchange', function () { if (location.hash === '#get') lookhere(); });
 })();
 </script>
 </body>
