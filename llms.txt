@@ -23,3 +23,25 @@
 - [Support](https://tarazi.github.io/planet-pointer-support/)
 
 Developer: Haviv Tarazi. Contact: tarazi.apps@gmail.com
+
+# Moed
+
+> Moed is a mobile app (Android on Google Play; iPhone coming to the App Store) for Jewish times and dates: halachic zmanim, candle lighting, Shabbat and holiday times, yahrzeit reminders on the Hebrew date, and a compass that finds Jerusalem. It works offline, in English, Hebrew, French, Spanish and Russian, and the user's location never leaves the phone.
+
+## What it does
+- Daily zmanim for the exact location, from alot hashachar to tzeis hakochavim, with the next zman counting down.
+- Candle lighting (18, 20, 30 or 40 minutes before sunset), the end of Shabbat and Yom Tov, and the start and end of every fast.
+- A full Jewish holidays calendar, Hebrew and civil dates side by side, different for Israel and the diaspora.
+- Personal dates: yahrzeits (azkara), Hebrew birthdays and anniversaries, worked out every year, including Adar in a leap year, with a reminder on the eve.
+- A compass to the Temple Mount in Jerusalem, corrected to true north offline.
+- The user's own minhag: tzeis shita (Geonim 8.5 degrees, 16.1 degrees, Rabbeinu Tam) and a manual offset.
+
+## Price
+- Free: zmanim, candle lighting, Shabbat and holiday times, reminders, the calendar, the compass, and three personal dates.
+- Premium: unlimited personal dates, an AR camera compass, widgets and multiple saved locations, as a monthly or yearly subscription, a lifetime unlock, or a 7, 14 or 30 day pass.
+
+## Links
+- [Website (English)](https://tarazi.github.io/moed/)
+- [Website (Hebrew)](https://tarazi.github.io/moed/he/)
+- [Support](https://tarazi.github.io/moed/support/)
+- [Privacy policy](https://tarazi.github.io/zmanim-compass-privacy/)
