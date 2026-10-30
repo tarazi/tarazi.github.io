@@ -1,6 +1,6 @@
 # Planet Pointer
 
-> Planet Pointer is a mobile app (Android on Google Play; iPhone coming to the App Store) that turns the phone's camera into a guide to the night sky. The user picks a target, or simply points the camera, and the app guides them to it or names what they are looking at. It works offline, in 79 languages, and the user's location never leaves the phone.
+> Planet Pointer is a mobile app (Android on Google Play, iPhone on the App Store) that turns the phone's camera into a guide to the night sky. The user picks a target, or simply points the camera, and the app guides them to it or names what they are looking at. It works offline, in 79 languages, and the user's location never leaves the phone.
 
 ## What it does
 - Guides the camera to any planet, star, constellation, deep-sky object or satellite with an arrow and a dashed line; the ring turns green when locked on.
@@ -26,7 +26,7 @@ Developer: Haviv Tarazi. Contact: tarazi.apps@gmail.com
 
 # Moed
 
-> Moed is a mobile app (Android on Google Play; iPhone coming to the App Store) for Jewish times and dates: halachic zmanim, candle lighting, Shabbat and holiday times, yahrzeit reminders on the Hebrew date, and a compass that finds Jerusalem. It works offline, in English, Hebrew, French, Spanish and Russian, and the user's location never leaves the phone.
+> Moed is a mobile app (Android on Google Play, iPhone on the App Store) for Jewish times and dates: halachic zmanim, candle lighting, Shabbat and holiday times, yahrzeit reminders on the Hebrew date, and a compass that finds Jerusalem. It works offline, in English, Hebrew, French, Spanish and Russian, and the user's location never leaves the phone.
 
 ## What it does
 - Daily zmanim for the exact location, from alot hashachar to tzeis hakochavim, with the next zman counting down.
