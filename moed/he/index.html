@@ -10,6 +10,7 @@
 <link rel="alternate" hreflang="he" href="https://tarazi.github.io/moed/he/">
 <link rel="alternate" hreflang="fr" href="https://tarazi.github.io/moed/fr/">
 <link rel="alternate" hreflang="es" href="https://tarazi.github.io/moed/es/">
+<link rel="alternate" hreflang="ru" href="https://tarazi.github.io/moed/ru/">
 <link rel="alternate" hreflang="x-default" href="https://tarazi.github.io/moed/">
 <meta name="theme-color" content="#EFE9E1">
 <link rel="icon" type="image/png" href="../img/icon-96.png">
@@ -254,7 +255,7 @@
 <script>
 (function () {
   // pages that exist; a language joins this list the day its page is published
-  var READY = { en: "/moed/", he: "/moed/he/", fr: "/moed/fr/", es: "/moed/es/" }, cur = "he", want;
+  var READY = { en: "/moed/", he: "/moed/he/", fr: "/moed/fr/", es: "/moed/es/", ru: "/moed/ru/" }, cur = "he", want;
   try { want = localStorage.getItem("moed-lang"); } catch (e) {}
   if (!want) {
     if (cur !== "en") return; // a visitor who arrived on a translated page chose it
@@ -267,7 +268,7 @@
 </head>
 <body>
 <div class="wrap">
-  <nav><a class="brand" href="./"><img src="../img/icon-96.png" alt="">מועד</a><div class="navr"><details class="lang"><summary aria-label="שפה: עברית"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 3.9 5.8 3.9 9s-1.3 6.2-3.9 9c-2.6-2.8-3.9-5.8-3.9-9S9.4 5.8 12 3z"/></svg><span>עב</span><svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><ul><li><a href="../" hreflang="en" lang="en" data-lang="en"><span>English</span><span class="code">EN</span></a></li><li><a href="./" hreflang="he" lang="he" data-lang="he" aria-current="page"><span>עברית</span><span class="code">עב</span></a></li><li><a href="../fr/" hreflang="fr" lang="fr" data-lang="fr"><span>Français</span><span class="code">FR</span></a></li><li><a href="../es/" hreflang="es" lang="es" data-lang="es"><span>Español</span><span class="code">ES</span></a></li><li><a class="soon" aria-disabled="true" hreflang="ru" lang="ru" data-lang="ru"><span>Русский</span><span class="code">RU</span></a></li></ul></details><a class="pill" href="#get">להורדה</a></div></nav>
+  <nav><a class="brand" href="./"><img src="../img/icon-96.png" alt="">מועד</a><div class="navr"><details class="lang"><summary aria-label="שפה: עברית"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 3.9 5.8 3.9 9s-1.3 6.2-3.9 9c-2.6-2.8-3.9-5.8-3.9-9S9.4 5.8 12 3z"/></svg><span>עב</span><svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><ul><li><a href="../" hreflang="en" lang="en" data-lang="en"><span>English</span><span class="code">EN</span></a></li><li><a href="./" hreflang="he" lang="he" data-lang="he" aria-current="page"><span>עברית</span><span class="code">עב</span></a></li><li><a href="../fr/" hreflang="fr" lang="fr" data-lang="fr"><span>Français</span><span class="code">FR</span></a></li><li><a href="../es/" hreflang="es" lang="es" data-lang="es"><span>Español</span><span class="code">ES</span></a></li><li><a href="../ru/" hreflang="ru" lang="ru" data-lang="ru"><span>Русский</span><span class="code">RU</span></a></li></ul></details><a class="pill" href="#get">להורדה</a></div></nav>
 
   <header class="hero">
     <div>
@@ -355,7 +356,7 @@
     </div>
   </section>
 
-  <footer><span>מועד, מאת חביב תרזי</span><span><a href="https://tarazi.github.io/zmanim-compass-privacy/" target="_blank" rel="noopener">פרטיות</a> &nbsp; <a href="../support/#he">תמיכה</a> &nbsp; <details class="lang up"><summary aria-label="שפה: עברית"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 3.9 5.8 3.9 9s-1.3 6.2-3.9 9c-2.6-2.8-3.9-5.8-3.9-9S9.4 5.8 12 3z"/></svg><span>עב</span><svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><ul><li><a href="../" hreflang="en" lang="en" data-lang="en"><span>English</span><span class="code">EN</span></a></li><li><a href="./" hreflang="he" lang="he" data-lang="he" aria-current="page"><span>עברית</span><span class="code">עב</span></a></li><li><a href="../fr/" hreflang="fr" lang="fr" data-lang="fr"><span>Français</span><span class="code">FR</span></a></li><li><a href="../es/" hreflang="es" lang="es" data-lang="es"><span>Español</span><span class="code">ES</span></a></li><li><a class="soon" aria-disabled="true" hreflang="ru" lang="ru" data-lang="ru"><span>Русский</span><span class="code">RU</span></a></li></ul></details></span></footer>
+  <footer><span>מועד, מאת חביב תרזי</span><span><a href="https://tarazi.github.io/zmanim-compass-privacy/" target="_blank" rel="noopener">פרטיות</a> &nbsp; <a href="../support/#he">תמיכה</a> &nbsp; <details class="lang up"><summary aria-label="שפה: עברית"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 3.9 5.8 3.9 9s-1.3 6.2-3.9 9c-2.6-2.8-3.9-5.8-3.9-9S9.4 5.8 12 3z"/></svg><span>עב</span><svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><ul><li><a href="../" hreflang="en" lang="en" data-lang="en"><span>English</span><span class="code">EN</span></a></li><li><a href="./" hreflang="he" lang="he" data-lang="he" aria-current="page"><span>עברית</span><span class="code">עב</span></a></li><li><a href="../fr/" hreflang="fr" lang="fr" data-lang="fr"><span>Français</span><span class="code">FR</span></a></li><li><a href="../es/" hreflang="es" lang="es" data-lang="es"><span>Español</span><span class="code">ES</span></a></li><li><a href="../ru/" hreflang="ru" lang="ru" data-lang="ru"><span>Русский</span><span class="code">RU</span></a></li></ul></details></span></footer>
 </div>
 
 <script>
