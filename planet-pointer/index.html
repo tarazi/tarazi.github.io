@@ -202,11 +202,53 @@
     .c1, .c2, .c3, .c4, .c5 { grid-column: 1 / -1; }
   }
   @media (prefers-reduced-motion: reduce) { .p, .p img { animation-play-state: paused; } .pop { opacity: 1; transform: none; } .card { transition: none; } }
+
+  /* language picker (from the Moed pages): a globe + the current code; opens a small card of the site's languages */
+  .navr { display: flex; align-items: center; gap: 10px; }
+  .lang { position: relative; }
+  .lang summary { list-style: none; display: inline-flex; align-items: center; gap: 7px; height: 40px; padding: 0 14px 0 11px; border-radius: 999px; cursor: pointer; font-weight: 600; font-size: 15px; color: var(--ink); background: color-mix(in srgb, var(--card) 70%, transparent); border: 1px solid var(--line); transition: background .2s, transform .35s cubic-bezier(.34,1.56,.64,1); user-select: none; }
+  .lang summary::-webkit-details-marker { display: none; }
+  .lang summary:hover { background: var(--card); transform: translateY(-2px); }
+  .lang summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .lang summary svg { width: 18px; height: 18px; flex: none; }
+  .lang summary .chev { width: 10px; height: 10px; opacity: .55; transition: transform .25s; }
+  .lang[open] summary .chev { transform: rotate(180deg); }
+  .lang ul { list-style: none; margin: 0; padding: 6px; position: absolute; inset-inline-end: 0; top: calc(100% + 8px); min-width: 180px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 18px 40px -14px rgb(41 9 7 / .28); z-index: 50; transform-origin: top right; animation: langIn .22s cubic-bezier(.34,1.56,.64,1); }
+  .lang.up ul { top: auto; bottom: calc(100% + 8px); transform-origin: bottom right; }
+  [dir="rtl"] .lang ul { transform-origin: top left; }
+  [dir="rtl"] .lang.up ul { transform-origin: bottom left; }
+  .lang li a { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 14px; border-radius: 12px; font-size: 16px; color: var(--ink); text-decoration: none; }
+  .lang li a:hover, .lang li a:focus-visible { background: color-mix(in srgb, var(--accent) 12%, transparent); outline: none; }
+  .lang li a .code { font-size: 12px; font-weight: 700; letter-spacing: .04em; color: var(--muted); }
+  .lang li a[aria-current] { font-weight: 700; color: var(--accent); }
+  .lang li a[aria-current] .code::before { content: "✓ "; color: var(--accent); }
+  footer .lang { display: inline-block; vertical-align: middle; }
+  footer .lang summary { height: 34px; font-size: 14px; background: transparent; color: var(--muted); }
+  footer .lang summary:hover { color: var(--ink); }
+  .brand, nav .pill, .lang summary { white-space: nowrap; }
+  nav { gap: 8px; }
+  @media (max-width: 420px) { .navr { gap: 6px; } nav .pill { height: 40px; padding: 0 14px; font-size: 15px; } nav .lang summary { padding: 0 9px; gap: 5px; } nav .lang summary .chev { display: none; } .brand { font-size: 16px; gap: 7px; } .brand img { width: 30px; height: 30px; } }
+  @media (max-width: 380px) { .brand { font-size: 14px; gap: 6px; } .brand img { width: 26px; height: 26px; border-radius: 8px; } nav .pill { padding: 0 11px; font-size: 13px; height: 36px; } nav .lang summary { height: 36px; font-size: 13px; padding: 0 8px; } nav .lang summary svg { width: 16px; height: 16px; } }
+  @keyframes langIn { from { opacity: 0; transform: scale(.94) translateY(-4px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .lang ul { animation: none; } .lang summary, .lang summary .chev { transition: none; } }
 </style>
+<script>
+(function () {
+  // pages that exist; a language joins this list the day its page is published
+  var READY = { en: "/planet-pointer/", he: "/planet-pointer/he/" }, cur = "en", want;
+  try { want = localStorage.getItem("pp-lang"); } catch (e) {}
+  if (!want) {
+    if (cur !== "en") return; // a visitor who arrived on a translated page chose it
+    var langs = navigator.languages || [navigator.language || ""];
+    for (var i = 0; i < langs.length; i++) { var l = String(langs[i]).slice(0, 2).toLowerCase(); if (l === "iw") l = "he"; if (READY[l]) { want = l; break; } }
+  }
+  if (want && want !== cur && READY[want]) location.replace(READY[want] + location.hash);
+})();
+</script>
 </head>
 <body>
 <div class="wrap">
-  <nav><a class="brand" href="./"><img src="img/icon-96.png" alt="">Planet Pointer</a><a class="pill" href="#get">Get the app</a></nav>
+  <nav><a class="brand" href="./"><img src="img/icon-96.png" alt="">Planet Pointer</a><div class="navr"><details class="lang"><summary aria-label="Language: English"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 3.9 5.8 3.9 9s-1.3 6.2-3.9 9c-2.6-2.8-3.9-5.8-3.9-9S9.4 5.8 12 3z"/></svg><span>EN</span><svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><ul><li><a href="/planet-pointer/" hreflang="en" lang="en" data-lang="en" aria-current="page"><span>English</span><span class="code">EN</span></a></li><li><a href="/planet-pointer/he/" hreflang="he" lang="he" data-lang="he"><span>עברית</span><span class="code">עב</span></a></li></ul></details><a class="pill" href="#get">Get the app</a></div></nav>
 
   <header class="hero">
     <div>
@@ -281,7 +323,7 @@
     <div class="legend"><span><i></i>Built in, free</span><span><i class="pro"></i>Download with Pro</span></div>
   </section>
 
-  <footer><span>Planet Pointer by Haviv Tarazi</span><span><a href="https://tarazi.github.io/planet-pointer-privacy/" target="_blank" rel="noopener">Privacy</a> &nbsp; <a href="https://tarazi.github.io/planet-pointer-support/" target="_blank" rel="noopener">Support</a> &nbsp; <a href="he/" hreflang="he" lang="he">עברית</a></span></footer>
+  <footer><span>Planet Pointer by Haviv Tarazi</span><span><a href="https://tarazi.github.io/planet-pointer-privacy/" target="_blank" rel="noopener">Privacy</a> &nbsp; <a href="https://tarazi.github.io/planet-pointer-support/" target="_blank" rel="noopener">Support</a> &nbsp; <details class="lang up"><summary aria-label="Language: English"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 3.9 5.8 3.9 9s-1.3 6.2-3.9 9c-2.6-2.8-3.9-5.8-3.9-9S9.4 5.8 12 3z"/></svg><span>EN</span><svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><ul><li><a href="/planet-pointer/" hreflang="en" lang="en" data-lang="en" aria-current="page"><span>English</span><span class="code">EN</span></a></li><li><a href="/planet-pointer/he/" hreflang="he" lang="he" data-lang="he"><span>עברית</span><span class="code">עב</span></a></li></ul></details></span></footer>
 </div>
 <script>
 (() => {
@@ -380,6 +422,19 @@
   let visible = true;
   new IntersectionObserver(([e]) => { const was = visible; visible = e.isIntersecting; if (visible && !was) frame(); }).observe(c);
   frame();
+})();
+</script>
+<script>
+(function () {
+  var all = document.querySelectorAll('details.lang');
+  all.forEach(function (d) {
+    d.addEventListener('toggle', function () { if (d.open) all.forEach(function (o) { if (o !== d) o.open = false; }); });
+    d.querySelectorAll('a[data-lang]').forEach(function (a) {
+      a.addEventListener('click', function () { try { localStorage.setItem('pp-lang', a.dataset.lang); } catch (e) {} });
+    });
+  });
+  document.addEventListener('click', function (e) { all.forEach(function (d) { if (d.open && !d.contains(e.target)) d.open = false; }); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') all.forEach(function (d) { if (d.open) { d.open = false; d.querySelector('summary').focus(); } }); });
 })();
 </script>
 <script>
