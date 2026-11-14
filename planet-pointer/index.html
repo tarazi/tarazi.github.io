@@ -7,6 +7,7 @@
 <meta name="description" content="Point your phone at the sky and Planet Pointer guides you to any planet, star, constellation, galaxy or satellite, and names what you see. Offline, 79 languages, private.">
 <link rel="canonical" href="https://tarazi.github.io/planet-pointer/">
 <link rel="alternate" hreflang="en" href="https://tarazi.github.io/planet-pointer/">
+<link rel="alternate" hreflang="es" href="https://tarazi.github.io/planet-pointer/es/">
 <link rel="alternate" hreflang="he" href="https://tarazi.github.io/planet-pointer/he/">
 <link rel="alternate" hreflang="x-default" href="https://tarazi.github.io/planet-pointer/">
 <meta name="theme-color" content="#EFE9E1">
@@ -229,13 +230,14 @@
   nav { gap: 8px; }
   @media (max-width: 420px) { .navr { gap: 6px; } nav .pill { height: 40px; padding: 0 14px; font-size: 15px; } nav .lang summary { padding: 0 9px; gap: 5px; } nav .lang summary .chev { display: none; } .brand { font-size: 16px; gap: 7px; } .brand img { width: 30px; height: 30px; } }
   @media (max-width: 380px) { .brand { font-size: 14px; gap: 6px; } .brand img { width: 26px; height: 26px; border-radius: 8px; } nav .pill { padding: 0 11px; font-size: 13px; height: 36px; } nav .lang summary { height: 36px; font-size: 13px; padding: 0 8px; } nav .lang summary svg { width: 16px; height: 16px; } }
+  @media (max-width: 340px) { .navr { gap: 4px; } .brand { font-size: 13px; gap: 5px; } .brand img { width: 24px; height: 24px; border-radius: 7px; } nav .pill { padding: 0 9px; font-size: 12px; } nav .lang summary { padding: 0 6px; gap: 4px; font-size: 12px; } }
   @keyframes langIn { from { opacity: 0; transform: scale(.94) translateY(-4px); } to { opacity: 1; transform: none; } }
   @media (prefers-reduced-motion: reduce) { .lang ul { animation: none; } .lang summary, .lang summary .chev { transition: none; } }
 </style>
 <script>
 (function () {
   // pages that exist; a language joins this list the day its page is published
-  var READY = { en: "/planet-pointer/", he: "/planet-pointer/he/" }, cur = "en", want;
+  var READY = {"en":"/planet-pointer/","es":"/planet-pointer/es/","he":"/planet-pointer/he/"}, cur = "en", want;
   try { want = localStorage.getItem("pp-lang"); } catch (e) {}
   if (!want) {
     if (cur !== "en") return; // a visitor who arrived on a translated page chose it
@@ -248,7 +250,7 @@
 </head>
 <body>
 <div class="wrap">
-  <nav><a class="brand" href="./"><img src="img/icon-96.png" alt="">Planet Pointer</a><div class="navr"><details class="lang"><summary aria-label="Language: English"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 3.9 5.8 3.9 9s-1.3 6.2-3.9 9c-2.6-2.8-3.9-5.8-3.9-9S9.4 5.8 12 3z"/></svg><span>EN</span><svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><ul><li><a href="/planet-pointer/" hreflang="en" lang="en" data-lang="en" aria-current="page"><span>English</span><span class="code">EN</span></a></li><li><a href="/planet-pointer/he/" hreflang="he" lang="he" data-lang="he"><span>עברית</span><span class="code">עב</span></a></li></ul></details><a class="pill" href="#get">Get the app</a></div></nav>
+  <nav><a class="brand" href="./"><img src="img/icon-96.png" alt="">Planet Pointer</a><div class="navr"><details class="lang"><summary aria-label="Language: English"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 3.9 5.8 3.9 9s-1.3 6.2-3.9 9c-2.6-2.8-3.9-5.8-3.9-9S9.4 5.8 12 3z"/></svg><span>EN</span><svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><ul><li><a href="/planet-pointer/" hreflang="en" lang="en" data-lang="en" aria-current="page"><span>English</span><span class="code">EN</span></a></li><li><a href="/planet-pointer/es/" hreflang="es" lang="es" data-lang="es"><span>Español</span><span class="code">ES</span></a></li><li><a href="/planet-pointer/he/" hreflang="he" lang="he" data-lang="he"><span>עברית</span><span class="code">עב</span></a></li></ul></details><a class="pill" href="#get">Get the app</a></div></nav>
 
   <header class="hero">
     <div>
@@ -323,7 +325,7 @@
     <div class="legend"><span><i></i>Built in, free</span><span><i class="pro"></i>Download with Pro</span></div>
   </section>
 
-  <footer><span>Planet Pointer by Haviv Tarazi</span><span><a href="https://tarazi.github.io/planet-pointer-privacy/" target="_blank" rel="noopener">Privacy</a> &nbsp; <a href="https://tarazi.github.io/planet-pointer-support/" target="_blank" rel="noopener">Support</a> &nbsp; <details class="lang up"><summary aria-label="Language: English"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 3.9 5.8 3.9 9s-1.3 6.2-3.9 9c-2.6-2.8-3.9-5.8-3.9-9S9.4 5.8 12 3z"/></svg><span>EN</span><svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><ul><li><a href="/planet-pointer/" hreflang="en" lang="en" data-lang="en" aria-current="page"><span>English</span><span class="code">EN</span></a></li><li><a href="/planet-pointer/he/" hreflang="he" lang="he" data-lang="he"><span>עברית</span><span class="code">עב</span></a></li></ul></details></span></footer>
+  <footer><span>Planet Pointer by Haviv Tarazi</span><span><a href="https://tarazi.github.io/planet-pointer-privacy/" target="_blank" rel="noopener">Privacy</a> &nbsp; <a href="https://tarazi.github.io/planet-pointer-support/" target="_blank" rel="noopener">Support</a> &nbsp; <details class="lang up"><summary aria-label="Language: English"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 3.9 5.8 3.9 9s-1.3 6.2-3.9 9c-2.6-2.8-3.9-5.8-3.9-9S9.4 5.8 12 3z"/></svg><span>EN</span><svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><ul><li><a href="/planet-pointer/" hreflang="en" lang="en" data-lang="en" aria-current="page"><span>English</span><span class="code">EN</span></a></li><li><a href="/planet-pointer/es/" hreflang="es" lang="es" data-lang="es"><span>Español</span><span class="code">ES</span></a></li><li><a href="/planet-pointer/he/" hreflang="he" lang="he" data-lang="he"><span>עברית</span><span class="code">עב</span></a></li></ul></details></span></footer>
 </div>
 <script>
 (() => {
