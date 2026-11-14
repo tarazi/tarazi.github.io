@@ -7,8 +7,18 @@
 <meta name="description" content="Point your phone at the sky and Planet Pointer guides you to any planet, star, constellation, galaxy or satellite, and names what you see. Offline, 79 languages, private.">
 <link rel="canonical" href="https://tarazi.github.io/planet-pointer/">
 <link rel="alternate" hreflang="en" href="https://tarazi.github.io/planet-pointer/">
-<link rel="alternate" hreflang="es" href="https://tarazi.github.io/planet-pointer/es/">
 <link rel="alternate" hreflang="he" href="https://tarazi.github.io/planet-pointer/he/">
+<link rel="alternate" hreflang="ar" href="https://tarazi.github.io/planet-pointer/ar/">
+<link rel="alternate" hreflang="es" href="https://tarazi.github.io/planet-pointer/es/">
+<link rel="alternate" hreflang="pt" href="https://tarazi.github.io/planet-pointer/pt/">
+<link rel="alternate" hreflang="fr" href="https://tarazi.github.io/planet-pointer/fr/">
+<link rel="alternate" hreflang="nl" href="https://tarazi.github.io/planet-pointer/nl/">
+<link rel="alternate" hreflang="ru" href="https://tarazi.github.io/planet-pointer/ru/">
+<link rel="alternate" hreflang="zh-Hans" href="https://tarazi.github.io/planet-pointer/zh/">
+<link rel="alternate" hreflang="ja" href="https://tarazi.github.io/planet-pointer/ja/">
+<link rel="alternate" hreflang="hi" href="https://tarazi.github.io/planet-pointer/hi/">
+<link rel="alternate" hreflang="tl" href="https://tarazi.github.io/planet-pointer/tl/">
+<link rel="alternate" hreflang="ceb" href="https://tarazi.github.io/planet-pointer/ceb/">
 <link rel="alternate" hreflang="x-default" href="https://tarazi.github.io/planet-pointer/">
 <meta name="theme-color" content="#EFE9E1">
 <link rel="icon" type="image/png" href="img/icon-96.png">
@@ -214,7 +224,7 @@
   .lang summary svg { width: 18px; height: 18px; flex: none; }
   .lang summary .chev { width: 10px; height: 10px; opacity: .55; transition: transform .25s; }
   .lang[open] summary .chev { transform: rotate(180deg); }
-  .lang ul { list-style: none; margin: 0; padding: 6px; position: absolute; inset-inline-end: 0; top: calc(100% + 8px); min-width: 180px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 18px 40px -14px rgb(41 9 7 / .28); z-index: 50; transform-origin: top right; animation: langIn .22s cubic-bezier(.34,1.56,.64,1); }
+  .lang ul { max-height: min(70vh, 440px); overflow-y: auto; list-style: none; margin: 0; padding: 6px; position: absolute; inset-inline-end: 0; top: calc(100% + 8px); min-width: 180px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 18px 40px -14px rgb(41 9 7 / .28); z-index: 50; transform-origin: top right; animation: langIn .22s cubic-bezier(.34,1.56,.64,1); }
   .lang.up ul { top: auto; bottom: calc(100% + 8px); transform-origin: bottom right; }
   [dir="rtl"] .lang ul { transform-origin: top left; }
   [dir="rtl"] .lang.up ul { transform-origin: bottom left; }
@@ -237,12 +247,12 @@
 <script>
 (function () {
   // pages that exist; a language joins this list the day its page is published
-  var READY = {"en":"/planet-pointer/","es":"/planet-pointer/es/","he":"/planet-pointer/he/"}, cur = "en", want;
+  var READY = {"en":"/planet-pointer/","he":"/planet-pointer/he/","ar":"/planet-pointer/ar/","es":"/planet-pointer/es/","pt":"/planet-pointer/pt/","fr":"/planet-pointer/fr/","nl":"/planet-pointer/nl/","ru":"/planet-pointer/ru/","zh":"/planet-pointer/zh/","ja":"/planet-pointer/ja/","hi":"/planet-pointer/hi/","tl":"/planet-pointer/tl/","ceb":"/planet-pointer/ceb/"}, cur = "en", want;
   try { want = localStorage.getItem("pp-lang"); } catch (e) {}
   if (!want) {
     if (cur !== "en") return; // a visitor who arrived on a translated page chose it
     var langs = navigator.languages || [navigator.language || ""];
-    for (var i = 0; i < langs.length; i++) { var l = String(langs[i]).slice(0, 2).toLowerCase(); if (l === "iw") l = "he"; if (READY[l]) { want = l; break; } }
+    for (var i = 0; i < langs.length; i++) { var raw = String(langs[i]), l = raw.slice(0, 2).toLowerCase(); if (l === "iw") l = "he"; if (l === "zh" && /^zh-(tw|hk|mo|hant)/i.test(raw)) continue; /* Traditional Chinese readers are not sent to the Simplified page */ if (READY[l]) { want = l; break; } }
   }
   if (want && want !== cur && READY[want]) location.replace(READY[want] + location.hash);
 })();
@@ -250,7 +260,7 @@
 </head>
 <body>
 <div class="wrap">
-  <nav><a class="brand" href="./"><img src="img/icon-96.png" alt="">Planet Pointer</a><div class="navr"><details class="lang"><summary aria-label="Language: English"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 3.9 5.8 3.9 9s-1.3 6.2-3.9 9c-2.6-2.8-3.9-5.8-3.9-9S9.4 5.8 12 3z"/></svg><span>EN</span><svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><ul><li><a href="/planet-pointer/" hreflang="en" lang="en" data-lang="en" aria-current="page"><span>English</span><span class="code">EN</span></a></li><li><a href="/planet-pointer/es/" hreflang="es" lang="es" data-lang="es"><span>Español</span><span class="code">ES</span></a></li><li><a href="/planet-pointer/he/" hreflang="he" lang="he" data-lang="he"><span>עברית</span><span class="code">עב</span></a></li></ul></details><a class="pill" href="#get">Get the app</a></div></nav>
+  <nav><a class="brand" href="./"><img src="img/icon-96.png" alt="">Planet Pointer</a><div class="navr"><details class="lang"><summary aria-label="Language: English"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 3.9 5.8 3.9 9s-1.3 6.2-3.9 9c-2.6-2.8-3.9-5.8-3.9-9S9.4 5.8 12 3z"/></svg><span>EN</span><svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><ul><li><a href="/planet-pointer/" hreflang="en" lang="en" data-lang="en" aria-current="page"><span>English</span><span class="code">EN</span></a></li><li><a href="/planet-pointer/he/" hreflang="he" lang="he" data-lang="he"><span>עברית</span><span class="code">עב</span></a></li><li><a href="/planet-pointer/ar/" hreflang="ar" lang="ar" data-lang="ar"><span>العربية</span><span class="code">عر</span></a></li><li><a href="/planet-pointer/es/" hreflang="es" lang="es" data-lang="es"><span>Español</span><span class="code">ES</span></a></li><li><a href="/planet-pointer/pt/" hreflang="pt" lang="pt" data-lang="pt"><span>Português</span><span class="code">PT</span></a></li><li><a href="/planet-pointer/fr/" hreflang="fr" lang="fr" data-lang="fr"><span>Français</span><span class="code">FR</span></a></li><li><a href="/planet-pointer/nl/" hreflang="nl" lang="nl" data-lang="nl"><span>Nederlands</span><span class="code">NL</span></a></li><li><a href="/planet-pointer/ru/" hreflang="ru" lang="ru" data-lang="ru"><span>Русский</span><span class="code">RU</span></a></li><li><a href="/planet-pointer/zh/" hreflang="zh-Hans" lang="zh-Hans" data-lang="zh"><span>简体中文</span><span class="code">ZH</span></a></li><li><a href="/planet-pointer/ja/" hreflang="ja" lang="ja" data-lang="ja"><span>日本語</span><span class="code">JA</span></a></li><li><a href="/planet-pointer/hi/" hreflang="hi" lang="hi" data-lang="hi"><span>हिन्दी</span><span class="code">HI</span></a></li><li><a href="/planet-pointer/tl/" hreflang="tl" lang="tl" data-lang="tl"><span>Tagalog</span><span class="code">TL</span></a></li><li><a href="/planet-pointer/ceb/" hreflang="ceb" lang="ceb" data-lang="ceb"><span>Cebuano</span><span class="code">CEB</span></a></li></ul></details><a class="pill" href="#get">Get the app</a></div></nav>
 
   <header class="hero">
     <div>
@@ -325,7 +335,7 @@
     <div class="legend"><span><i></i>Built in, free</span><span><i class="pro"></i>Download with Pro</span></div>
   </section>
 
-  <footer><span>Planet Pointer by Haviv Tarazi</span><span><a href="https://tarazi.github.io/planet-pointer-privacy/" target="_blank" rel="noopener">Privacy</a> &nbsp; <a href="https://tarazi.github.io/planet-pointer-support/" target="_blank" rel="noopener">Support</a> &nbsp; <details class="lang up"><summary aria-label="Language: English"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 3.9 5.8 3.9 9s-1.3 6.2-3.9 9c-2.6-2.8-3.9-5.8-3.9-9S9.4 5.8 12 3z"/></svg><span>EN</span><svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><ul><li><a href="/planet-pointer/" hreflang="en" lang="en" data-lang="en" aria-current="page"><span>English</span><span class="code">EN</span></a></li><li><a href="/planet-pointer/es/" hreflang="es" lang="es" data-lang="es"><span>Español</span><span class="code">ES</span></a></li><li><a href="/planet-pointer/he/" hreflang="he" lang="he" data-lang="he"><span>עברית</span><span class="code">עב</span></a></li></ul></details></span></footer>
+  <footer><span>Planet Pointer by Haviv Tarazi</span><span><a href="https://tarazi.github.io/planet-pointer-privacy/" target="_blank" rel="noopener">Privacy</a> &nbsp; <a href="https://tarazi.github.io/planet-pointer-support/" target="_blank" rel="noopener">Support</a> &nbsp; <details class="lang up"><summary aria-label="Language: English"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 3.9 5.8 3.9 9s-1.3 6.2-3.9 9c-2.6-2.8-3.9-5.8-3.9-9S9.4 5.8 12 3z"/></svg><span>EN</span><svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></summary><ul><li><a href="/planet-pointer/" hreflang="en" lang="en" data-lang="en" aria-current="page"><span>English</span><span class="code">EN</span></a></li><li><a href="/planet-pointer/he/" hreflang="he" lang="he" data-lang="he"><span>עברית</span><span class="code">עב</span></a></li><li><a href="/planet-pointer/ar/" hreflang="ar" lang="ar" data-lang="ar"><span>العربية</span><span class="code">عر</span></a></li><li><a href="/planet-pointer/es/" hreflang="es" lang="es" data-lang="es"><span>Español</span><span class="code">ES</span></a></li><li><a href="/planet-pointer/pt/" hreflang="pt" lang="pt" data-lang="pt"><span>Português</span><span class="code">PT</span></a></li><li><a href="/planet-pointer/fr/" hreflang="fr" lang="fr" data-lang="fr"><span>Français</span><span class="code">FR</span></a></li><li><a href="/planet-pointer/nl/" hreflang="nl" lang="nl" data-lang="nl"><span>Nederlands</span><span class="code">NL</span></a></li><li><a href="/planet-pointer/ru/" hreflang="ru" lang="ru" data-lang="ru"><span>Русский</span><span class="code">RU</span></a></li><li><a href="/planet-pointer/zh/" hreflang="zh-Hans" lang="zh-Hans" data-lang="zh"><span>简体中文</span><span class="code">ZH</span></a></li><li><a href="/planet-pointer/ja/" hreflang="ja" lang="ja" data-lang="ja"><span>日本語</span><span class="code">JA</span></a></li><li><a href="/planet-pointer/hi/" hreflang="hi" lang="hi" data-lang="hi"><span>हिन्दी</span><span class="code">HI</span></a></li><li><a href="/planet-pointer/tl/" hreflang="tl" lang="tl" data-lang="tl"><span>Tagalog</span><span class="code">TL</span></a></li><li><a href="/planet-pointer/ceb/" hreflang="ceb" lang="ceb" data-lang="ceb"><span>Cebuano</span><span class="code">CEB</span></a></li></ul></details></span></footer>
 </div>
 <script>
 (() => {

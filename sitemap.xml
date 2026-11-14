@@ -18,24 +18,234 @@
     <loc>https://tarazi.github.io/planet-pointer/</loc>
     <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://tarazi.github.io/planet-pointer/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://tarazi.github.io/planet-pointer/es/"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://tarazi.github.io/planet-pointer/he/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarazi.github.io/planet-pointer/"/>
-  </url>
-  <url>
-    <loc>https://tarazi.github.io/planet-pointer/es/</loc>
-    <lastmod>2026-11-14</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tarazi.github.io/planet-pointer/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tarazi.github.io/planet-pointer/ar/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tarazi.github.io/planet-pointer/es/"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://tarazi.github.io/planet-pointer/he/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tarazi.github.io/planet-pointer/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tarazi.github.io/planet-pointer/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tarazi.github.io/planet-pointer/nl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tarazi.github.io/planet-pointer/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tarazi.github.io/planet-pointer/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tarazi.github.io/planet-pointer/ja/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tarazi.github.io/planet-pointer/hi/"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://tarazi.github.io/planet-pointer/tl/"/>
+    <xhtml:link rel="alternate" hreflang="ceb" href="https://tarazi.github.io/planet-pointer/ceb/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tarazi.github.io/planet-pointer/"/>
   </url>
   <url>
     <loc>https://tarazi.github.io/planet-pointer/he/</loc>
     <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://tarazi.github.io/planet-pointer/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://tarazi.github.io/planet-pointer/es/"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://tarazi.github.io/planet-pointer/he/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tarazi.github.io/planet-pointer/ar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tarazi.github.io/planet-pointer/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tarazi.github.io/planet-pointer/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tarazi.github.io/planet-pointer/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tarazi.github.io/planet-pointer/nl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tarazi.github.io/planet-pointer/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tarazi.github.io/planet-pointer/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tarazi.github.io/planet-pointer/ja/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tarazi.github.io/planet-pointer/hi/"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://tarazi.github.io/planet-pointer/tl/"/>
+    <xhtml:link rel="alternate" hreflang="ceb" href="https://tarazi.github.io/planet-pointer/ceb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarazi.github.io/planet-pointer/"/>
+  </url>
+  <url>
+    <loc>https://tarazi.github.io/planet-pointer/ar/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarazi.github.io/planet-pointer/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://tarazi.github.io/planet-pointer/he/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tarazi.github.io/planet-pointer/ar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tarazi.github.io/planet-pointer/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tarazi.github.io/planet-pointer/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tarazi.github.io/planet-pointer/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tarazi.github.io/planet-pointer/nl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tarazi.github.io/planet-pointer/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tarazi.github.io/planet-pointer/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tarazi.github.io/planet-pointer/ja/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tarazi.github.io/planet-pointer/hi/"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://tarazi.github.io/planet-pointer/tl/"/>
+    <xhtml:link rel="alternate" hreflang="ceb" href="https://tarazi.github.io/planet-pointer/ceb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarazi.github.io/planet-pointer/"/>
+  </url>
+  <url>
+    <loc>https://tarazi.github.io/planet-pointer/es/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarazi.github.io/planet-pointer/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://tarazi.github.io/planet-pointer/he/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tarazi.github.io/planet-pointer/ar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tarazi.github.io/planet-pointer/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tarazi.github.io/planet-pointer/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tarazi.github.io/planet-pointer/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tarazi.github.io/planet-pointer/nl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tarazi.github.io/planet-pointer/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tarazi.github.io/planet-pointer/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tarazi.github.io/planet-pointer/ja/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tarazi.github.io/planet-pointer/hi/"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://tarazi.github.io/planet-pointer/tl/"/>
+    <xhtml:link rel="alternate" hreflang="ceb" href="https://tarazi.github.io/planet-pointer/ceb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarazi.github.io/planet-pointer/"/>
+  </url>
+  <url>
+    <loc>https://tarazi.github.io/planet-pointer/pt/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarazi.github.io/planet-pointer/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://tarazi.github.io/planet-pointer/he/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tarazi.github.io/planet-pointer/ar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tarazi.github.io/planet-pointer/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tarazi.github.io/planet-pointer/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tarazi.github.io/planet-pointer/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tarazi.github.io/planet-pointer/nl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tarazi.github.io/planet-pointer/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tarazi.github.io/planet-pointer/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tarazi.github.io/planet-pointer/ja/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tarazi.github.io/planet-pointer/hi/"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://tarazi.github.io/planet-pointer/tl/"/>
+    <xhtml:link rel="alternate" hreflang="ceb" href="https://tarazi.github.io/planet-pointer/ceb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarazi.github.io/planet-pointer/"/>
+  </url>
+  <url>
+    <loc>https://tarazi.github.io/planet-pointer/fr/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarazi.github.io/planet-pointer/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://tarazi.github.io/planet-pointer/he/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tarazi.github.io/planet-pointer/ar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tarazi.github.io/planet-pointer/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tarazi.github.io/planet-pointer/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tarazi.github.io/planet-pointer/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tarazi.github.io/planet-pointer/nl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tarazi.github.io/planet-pointer/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tarazi.github.io/planet-pointer/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tarazi.github.io/planet-pointer/ja/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tarazi.github.io/planet-pointer/hi/"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://tarazi.github.io/planet-pointer/tl/"/>
+    <xhtml:link rel="alternate" hreflang="ceb" href="https://tarazi.github.io/planet-pointer/ceb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarazi.github.io/planet-pointer/"/>
+  </url>
+  <url>
+    <loc>https://tarazi.github.io/planet-pointer/nl/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarazi.github.io/planet-pointer/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://tarazi.github.io/planet-pointer/he/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tarazi.github.io/planet-pointer/ar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tarazi.github.io/planet-pointer/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tarazi.github.io/planet-pointer/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tarazi.github.io/planet-pointer/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tarazi.github.io/planet-pointer/nl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tarazi.github.io/planet-pointer/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tarazi.github.io/planet-pointer/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tarazi.github.io/planet-pointer/ja/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tarazi.github.io/planet-pointer/hi/"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://tarazi.github.io/planet-pointer/tl/"/>
+    <xhtml:link rel="alternate" hreflang="ceb" href="https://tarazi.github.io/planet-pointer/ceb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarazi.github.io/planet-pointer/"/>
+  </url>
+  <url>
+    <loc>https://tarazi.github.io/planet-pointer/ru/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarazi.github.io/planet-pointer/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://tarazi.github.io/planet-pointer/he/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tarazi.github.io/planet-pointer/ar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tarazi.github.io/planet-pointer/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tarazi.github.io/planet-pointer/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tarazi.github.io/planet-pointer/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tarazi.github.io/planet-pointer/nl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tarazi.github.io/planet-pointer/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tarazi.github.io/planet-pointer/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tarazi.github.io/planet-pointer/ja/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tarazi.github.io/planet-pointer/hi/"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://tarazi.github.io/planet-pointer/tl/"/>
+    <xhtml:link rel="alternate" hreflang="ceb" href="https://tarazi.github.io/planet-pointer/ceb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarazi.github.io/planet-pointer/"/>
+  </url>
+  <url>
+    <loc>https://tarazi.github.io/planet-pointer/zh/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarazi.github.io/planet-pointer/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://tarazi.github.io/planet-pointer/he/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tarazi.github.io/planet-pointer/ar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tarazi.github.io/planet-pointer/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tarazi.github.io/planet-pointer/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tarazi.github.io/planet-pointer/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tarazi.github.io/planet-pointer/nl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tarazi.github.io/planet-pointer/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tarazi.github.io/planet-pointer/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tarazi.github.io/planet-pointer/ja/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tarazi.github.io/planet-pointer/hi/"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://tarazi.github.io/planet-pointer/tl/"/>
+    <xhtml:link rel="alternate" hreflang="ceb" href="https://tarazi.github.io/planet-pointer/ceb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarazi.github.io/planet-pointer/"/>
+  </url>
+  <url>
+    <loc>https://tarazi.github.io/planet-pointer/ja/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarazi.github.io/planet-pointer/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://tarazi.github.io/planet-pointer/he/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tarazi.github.io/planet-pointer/ar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tarazi.github.io/planet-pointer/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tarazi.github.io/planet-pointer/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tarazi.github.io/planet-pointer/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tarazi.github.io/planet-pointer/nl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tarazi.github.io/planet-pointer/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tarazi.github.io/planet-pointer/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tarazi.github.io/planet-pointer/ja/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tarazi.github.io/planet-pointer/hi/"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://tarazi.github.io/planet-pointer/tl/"/>
+    <xhtml:link rel="alternate" hreflang="ceb" href="https://tarazi.github.io/planet-pointer/ceb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarazi.github.io/planet-pointer/"/>
+  </url>
+  <url>
+    <loc>https://tarazi.github.io/planet-pointer/hi/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarazi.github.io/planet-pointer/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://tarazi.github.io/planet-pointer/he/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tarazi.github.io/planet-pointer/ar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tarazi.github.io/planet-pointer/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tarazi.github.io/planet-pointer/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tarazi.github.io/planet-pointer/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tarazi.github.io/planet-pointer/nl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tarazi.github.io/planet-pointer/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tarazi.github.io/planet-pointer/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tarazi.github.io/planet-pointer/ja/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tarazi.github.io/planet-pointer/hi/"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://tarazi.github.io/planet-pointer/tl/"/>
+    <xhtml:link rel="alternate" hreflang="ceb" href="https://tarazi.github.io/planet-pointer/ceb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarazi.github.io/planet-pointer/"/>
+  </url>
+  <url>
+    <loc>https://tarazi.github.io/planet-pointer/tl/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarazi.github.io/planet-pointer/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://tarazi.github.io/planet-pointer/he/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tarazi.github.io/planet-pointer/ar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tarazi.github.io/planet-pointer/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tarazi.github.io/planet-pointer/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tarazi.github.io/planet-pointer/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tarazi.github.io/planet-pointer/nl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tarazi.github.io/planet-pointer/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tarazi.github.io/planet-pointer/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tarazi.github.io/planet-pointer/ja/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tarazi.github.io/planet-pointer/hi/"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://tarazi.github.io/planet-pointer/tl/"/>
+    <xhtml:link rel="alternate" hreflang="ceb" href="https://tarazi.github.io/planet-pointer/ceb/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tarazi.github.io/planet-pointer/"/>
+  </url>
+  <url>
+    <loc>https://tarazi.github.io/planet-pointer/ceb/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tarazi.github.io/planet-pointer/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://tarazi.github.io/planet-pointer/he/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tarazi.github.io/planet-pointer/ar/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tarazi.github.io/planet-pointer/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tarazi.github.io/planet-pointer/pt/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tarazi.github.io/planet-pointer/fr/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://tarazi.github.io/planet-pointer/nl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tarazi.github.io/planet-pointer/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://tarazi.github.io/planet-pointer/zh/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tarazi.github.io/planet-pointer/ja/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://tarazi.github.io/planet-pointer/hi/"/>
+    <xhtml:link rel="alternate" hreflang="tl" href="https://tarazi.github.io/planet-pointer/tl/"/>
+    <xhtml:link rel="alternate" hreflang="ceb" href="https://tarazi.github.io/planet-pointer/ceb/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tarazi.github.io/planet-pointer/"/>
   </url>
   <url>
